@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/background.jpg);
+    height: 96vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background size is for media query */
+    background-size: max(1200px, 100vw);
+
+}
+
+.main .box {
+    height: 96vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    top: 0%;
+    position: absolute;
+}
+
+/* media query */
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav img {
+    width: 9.25rem;
+    height: 3rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    position: relative;
+    z-index: 10;
+    padding: 0px 37px;
+    margin: 15px 1px -3px
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+
+.hero> :first-child {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.seperation {
+    height: 9px;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    /* position:relative; */
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: calc(100% - 170px);}}
+        /* or any other desired height for mobile */
+    
+
+
+.btn {
+    padding: 4px 8px;
+    font-weight: bold;
+
+    background-color: rgba(248, 243, 243, 0.04);
+    /* filter: opacity(100%); */
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 23px;
+
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.main input {
+    padding: 17px 110px 14px 9px;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    margin: 5px;
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 58vw;
+    margin: auto;
+    color: white;
+    position: relative;
+
+    align-items: center;
+}
+
+.text-content {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    /* Adjusted to center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* Align text in the center */
+    display: flex;
+    justify-content: center;
+    padding: 28px 17px;
+    margin: 241px 49px;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.secImg {
+    position: absolute;
+    top: 0;
+}
+
+.secImg img {
+    width: 35vw;
+    position: absolute;
+    top: 54px;
+    right: -368px;
+    z-index: 10;
+}
+
+.secImg video {
+    position: relative;
+    top: 29px;
+    right: -289px;
+    width: 25vw;
+    height: 63vh;
+}
+section .first .text-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.first .text-content .text1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    
+   
+}
+
+.first .text-content .text2 {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+
+
+.container .seperation-one{
+    height: 9px;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    width: 1608px;
+    position: relative;
+    top: 553px;
+    right: 89px;
+    z-index: 999;
+}
+.second {
+    display: flex;
+    justify-content: center;
+    max-width: 58vw;
+    margin: auto;
+    color: white;
+    position: relative;
+    align-items: center;
+    top: 594px;
+    right: 227px;
+
+}
+.secImg-two img{
+    width: 37vw;
+    /* position: absolute; */
+    top: 54px;
+    /* right: -368px; */
+    z-index: 10;
+    margin: 11px 76px 0px -98px;
+}
+.text-content-one {
+    position: absolute;
+    top: 9%;
+    left: 98%;
+    /* Adjusted to center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* Align text in the center */
+    display: flex;
+    justify-content: center;
+    padding: 28px 17px;
+    margin: 241px 49px;
+    flex-direction: column;
+    gap: 8px;
+    white-space: nowrap;
+}
+section .second .text-content-one {
+    display: flex;
+    flex-direction: column;
+}
+.second .text-content-one .text3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    text-align: justify;
+    
+   
+}
+.second .text-content-one .text4 {
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+.container-one .seperation-two{
+    height: 9px;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    width: 1608px;
+    position: relative;
+    top: 667px;
+    right: 89px;
+    z-index: 999;
+}
+.third{
+    display: flex;
+    justify-content: center;
+    max-width: 58vw;
+    margin: auto;
+    color: white;
+    position: relative;
+
+    align-items: center;
+}
+.text-content-two {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    /* Adjusted to center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* Align text in the center */
+    display: flex;
+    justify-content: center;
+    padding: 28px 17px;
+    margin:  900px 49px;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.secImg-three {
+    position: absolute;
+    top: 0;
+}
+
+.secImg-three img {
+    width: 35vw;
+    position: absolute;
+    top: 750px;
+    right: -359px;
+    z-index: 10;
+}
+
+
+section .third .text-content-two{
+    display: flex;
+    flex-direction: column;
+}
+.third .text-content-two .text5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    text-align: justify;
+    
+   
+}
+.third .text-content-two .text6 {
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+.secImg-three video {
+    position: relative;
+    top: 717px;
+    right: -264px;
+    width: 23vw;
+    height: 48vh;
+}
+.container-two .seperation-three{
+    height: 9px;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    width: 1608px;
+    position: relative;
+    top: 1172px;
+    right: 89px;
+    z-index: 999;
+}
+.fourth {
+    display: flex;
+    justify-content: center;
+    max-width: 58vw;
+    margin: auto;
+    color: white;
+    position: relative;
+    align-items: center;
+    top: 1219px;
+    right: 227px;
+
+}
+.secImg-four img{
+    width: 37vw;
+    /* position: absolute; */
+    top: 54px;
+    /* right: -368px; */
+    z-index: 10;
+    margin: 11px 76px 0px -98px;
+}
+.text-content-three {
+    position: absolute;
+    top: -5%;
+    left: 103%;
+    /* Adjusted to center horizontally */
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    /* Align text in the center */
+    display: flex;
+    justify-content: center;
+    padding: 28px 17px;
+    margin: 241px 49px;
+    flex-direction: column;
+    gap: 6px;
+    white-space: nowrap;
+}
+section .fourth .text-content-three {
+    display: flex;
+    flex-direction: column;
+}
+.fourth .text-content-three .text7 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    text-align: justify;
+    
+   
+}
+.fourth .text-content-three .text8 {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+.container-three .seperation-four{
+    height: 9px;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    width: 1608px;
+    position: relative;
+    top: 1221px;
+    right: 89px;
+    z-index: 999;
+}
+.faq h2{
+    text-align: center;
+    top: 1255px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+.faq-box{
+    display: flex;
+    background-color:#2d2d2d;
+    color: white;
+    padding: 26px;
+    top:1285px;
+    right: 0;
+    position: relative;
+    max-width: 60vw;
+    margin: 12px auto;
+    z-index: 10;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    transition: all 0.98s ease-in-out;
+}
+.faq-box:hover{
+    background-color:#414141;
+}
+.container-four span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: white;
+    top: 1319px;
+    right: -157px;
+    position: relative;
+    padding: 0px 250px;
+    z-index: 10;
+}
+.hero-buttons-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    position: relative;
+    top: 1346px;
+    z-index: 10;
+    gap: 10px;
+}
+.hero-buttons-one .email-one{
+    padding: 17px 110px 14px 9px;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    margin: 5px;
+}
+.container-five .seperation-five{
+    height: 9px;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    width: 1608px;
+    position: relative;
+    top: 1384px;
+    right: 89px;
+    z-index: 999;
+}
+footer .question{
+    color: white;
+    top:  1425px;
+    position: relative;
+    /* right: -293px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 11px 15px -37px;
+    padding: 12px 292px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    text-decoration: none;
+    max-width: 60vw;
+    margin: auto;
+    z-index: 10;
+    position: relative;
+    top: 1475px;
+    gap: 5px;
+    padding-bottom: 75px;
+    
+}
+.footer a{
+    text-decoration: underline;
+    color: white;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    /* padding: 8px 12px; */
+    
+    
+}
